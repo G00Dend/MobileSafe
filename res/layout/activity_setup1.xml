@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/title_bar"
+        android:text="1.欢迎使用手机防盗1"
+        />
+    <TextView 
+       android:text="您的手机防盗卫士:"
+       style="@style/text_content_style"
+        />
+    <TextView 
+       android:text="sim卡变更报警"
+       style="@style/text_content_style"
+       android:drawableLeft="@android:drawable/star_big_on"
+       />
+    <TextView 
+       android:text="GPS追踪"
+       style="@style/text_content_style"
+       android:drawableLeft="@android:drawable/star_big_on"
+       />
+    
+      <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout 
+        android:id="@+id/ll_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"   
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_select"
+            style="@style/setup_dot"
+         />  
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+           
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+      
+     </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

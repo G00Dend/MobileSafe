@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/title_bar"
+        android:text="功能列表"
+        />
+    
+    <com.jiangcheng.mobilesafe.widget.FocusedTextView 
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="18sp"
+        android:text="@string/slogan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <GridView 
+        android:id="@+id/list_home"
+        android:verticalSpacing="15dip"
+        android:layout_marginTop="15dip"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        /> 
+</LinearLayout>

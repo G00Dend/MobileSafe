@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:itheima="http://schemas.android.com/apk/res/com.jiangcheng.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/title_bar"
+        android:text="2.手机卡绑定"
+        />
+    <TextView 
+       android:text="通过绑定SIM卡"
+       style="@style/text_content_style"
+        />
+    <TextView 
+       android:text="下次重启手机如果发现SIM卡变化\n就会发送报警短信"
+       style="@style/text_content_style"
+       />
+    <View 
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip"
+            
+            />
+   <com.jiangcheng.mobilesafe.widget.SettingItemView
+        android:id="@+id/siv_setup2_sim"
+         itheima:title="点击绑定sim卡"
+         itheima:desc_on="SIM卡已经绑定"
+         itheima:desc_off="sim卡没有绑定"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        />
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout 
+        android:id="@+id/ll_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"   
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_select"
+            style="@style/setup_dot"
+         />  
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+           
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_normal"
+            style="@style/setup_dot"
+         />
+      
+     </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
